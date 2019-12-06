@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43BA0FF52384B27D00285171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA0FF42384B27D00285171 /* AppDelegate.swift */; };
+		43BA0FFA2384B27D00285171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA0FF82384B27D00285171 /* Main.storyboard */; };
+		43BA0FFD2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43BA0FFB2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld */; };
+		43BA0FFF2384B27D00285171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BA0FFE2384B27D00285171 /* Assets.xcassets */; };
+		43D102732384C747005B3248 /* OthelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102622384C744005B3248 /* OthelloViewController.swift */; };
+		43D102742384C747005B3248 /* EventTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102632384C744005B3248 /* EventTabViewController.swift */; };
+		43D102752384C747005B3248 /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 43D102642384C744005B3248 /* Unknown.jpeg */; };
+		43D102762384C747005B3248 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102652384C744005B3248 /* EventDetailsViewController.swift */; };
+		43D102772384C747005B3248 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D102662384C744005B3248 /* BackButton.png */; };
+		43D102782384C747005B3248 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102672384C745005B3248 /* ChallengeViewController.swift */; };
+		43D102792384C747005B3248 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102682384C745005B3248 /* TicTacToeViewController.swift */; };
+		43D1027A2384C747005B3248 /* DonorAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102692384C745005B3248 /* DonorAgreementViewController.swift */; };
+		43D1027B2384C747005B3248 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1026A2384C745005B3248 /* DonationsViewController.swift */; };
+		43D1027C2384C747005B3248 /* DonorTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1026B2384C745005B3248 /* DonorTabViewController.swift */; };
+		43D1027D2384C747005B3248 /* SnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1026C2384C745005B3248 /* SnakeViewController.swift */; };
+		43D1027E2384C747005B3248 /* tic-tac-toe-150614_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D1026D2384C745005B3248 /* tic-tac-toe-150614_960_720.png */; };
+		43D1027F2384C747005B3248 /* Snake.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D1026E2384C746005B3248 /* Snake.png */; };
+		43D102802384C747005B3248 /* GameTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1026F2384C746005B3248 /* GameTabViewController.swift */; };
+		43D102812384C747005B3248 /* ChampsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102702384C746005B3248 /* ChampsModel.swift */; };
+		43D102822384C747005B3248 /* MostRecentDonorsViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */; };
+		43D102832384C747005B3248 /* StudentRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102722384C746005B3248 /* StudentRankViewController.swift */; };
+		43FCAE2F2399D14A0067DEAD /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE292399D14A0067DEAD /* Event+CoreDataClass.swift */; };
+		43FCAE302399D14A0067DEAD /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2A2399D14A0067DEAD /* Event+CoreDataProperties.swift */; };
+		43FCAE312399D14A0067DEAD /* Leaderboard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2B2399D14A0067DEAD /* Leaderboard+CoreDataClass.swift */; };
+		43FCAE322399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2C2399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift */; };
+		43FCAE332399D14A0067DEAD /* PastDonor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2D2399D14A0067DEAD /* PastDonor+CoreDataClass.swift */; };
+		43FCAE342399D14A0067DEAD /* PastDonor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2E2399D14A0067DEAD /* PastDonor+CoreDataProperties.swift */; };
+		43FCAE362399D1920067DEAD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE352399D1920067DEAD /* PersistenceManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43BA0FF12384B27D00285171 /* Champ Robotics App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Champ Robotics App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BA0FF42384B27D00285171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43BA0FF92384B27D00285171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43BA0FFC2384B27D00285171 /* Champ_Robotics_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Champ_Robotics_App.xcdatamodel; sourceTree = "<group>"; };
+		43BA0FFE2384B27D00285171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43BA10032384B27D00285171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D102622384C744005B3248 /* OthelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthelloViewController.swift; sourceTree = "<group>"; };
+		43D102632384C744005B3248 /* EventTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTabViewController.swift; sourceTree = "<group>"; };
+		43D102642384C744005B3248 /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
+		43D102652384C744005B3248 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		43D102662384C744005B3248 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		43D102672384C745005B3248 /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		43D102682384C745005B3248 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		43D102692384C745005B3248 /* DonorAgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorAgreementViewController.swift; sourceTree = "<group>"; };
+		43D1026A2384C745005B3248 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
+		43D1026B2384C745005B3248 /* DonorTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorTabViewController.swift; sourceTree = "<group>"; };
+		43D1026C2384C745005B3248 /* SnakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeViewController.swift; sourceTree = "<group>"; };
+		43D1026D2384C745005B3248 /* tic-tac-toe-150614_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tic-tac-toe-150614_960_720.png"; sourceTree = "<group>"; };
+		43D1026E2384C746005B3248 /* Snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snake.png; sourceTree = "<group>"; };
+		43D1026F2384C746005B3248 /* GameTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTabViewController.swift; sourceTree = "<group>"; };
+		43D102702384C746005B3248 /* ChampsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampsModel.swift; sourceTree = "<group>"; };
+		43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostRecentDonorsViewCotroller.swift; sourceTree = "<group>"; };
+		43D102722384C746005B3248 /* StudentRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentRankViewController.swift; sourceTree = "<group>"; };
+		43FCAE292399D14A0067DEAD /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		43FCAE2A2399D14A0067DEAD /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		43FCAE2B2399D14A0067DEAD /* Leaderboard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		43FCAE2C2399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		43FCAE2D2399D14A0067DEAD /* PastDonor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		43FCAE2E2399D14A0067DEAD /* PastDonor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		43FCAE352399D1920067DEAD /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43BA0FEE2384B27D00285171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4346F0572387441B000BFB7C /* GameControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D1026F2384C746005B3248 /* GameTabViewController.swift */,
+				43D102682384C745005B3248 /* TicTacToeViewController.swift */,
+				43D1026C2384C745005B3248 /* SnakeViewController.swift */,
+				43D102622384C744005B3248 /* OthelloViewController.swift */,
+			);
+			path = GameControllers;
+			sourceTree = "<group>";
+		};
+		4346F05823874537000BFB7C /* EventControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D102632384C744005B3248 /* EventTabViewController.swift */,
+				43D102652384C744005B3248 /* EventDetailsViewController.swift */,
+			);
+			path = EventControllers;
+			sourceTree = "<group>";
+		};
+		4346F0592387455B000BFB7C /* DonorControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D1026B2384C745005B3248 /* DonorTabViewController.swift */,
+				43D102672384C745005B3248 /* ChallengeViewController.swift */,
+				43D1026A2384C745005B3248 /* DonationsViewController.swift */,
+				43D102692384C745005B3248 /* DonorAgreementViewController.swift */,
+				43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */,
+				43D102722384C746005B3248 /* StudentRankViewController.swift */,
+			);
+			path = DonorControllers;
+			sourceTree = "<group>";
+		};
+		4346F05A23874587000BFB7C /* demo_images */ = {
+			isa = PBXGroup;
+			children = (
+				43D1026D2384C745005B3248 /* tic-tac-toe-150614_960_720.png */,
+				43D102642384C744005B3248 /* Unknown.jpeg */,
+				43D1026E2384C746005B3248 /* Snake.png */,
+			);
+			path = demo_images;
+			sourceTree = "<group>";
+		};
+		43BA0FE82384B27C00285171 = {
+			isa = PBXGroup;
+			children = (
+				43BA0FF32384B27D00285171 /* Champ Robotics App */,
+				43BA0FF22384B27D00285171 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43BA0FF22384B27D00285171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43BA0FF12384B27D00285171 /* Champ Robotics App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43BA0FF32384B27D00285171 /* Champ Robotics App */ = {
+			isa = PBXGroup;
+			children = (
+				43BA0FF82384B27D00285171 /* Main.storyboard */,
+				4346F0572387441B000BFB7C /* GameControllers */,
+				4346F05823874537000BFB7C /* EventControllers */,
+				4346F0592387455B000BFB7C /* DonorControllers */,
+				43FCAE282399D1270067DEAD /* CoreData */,
+				43FCAE352399D1920067DEAD /* PersistenceManager.swift */,
+				43D102702384C746005B3248 /* ChampsModel.swift */,
+				43BA0FF42384B27D00285171 /* AppDelegate.swift */,
+				43BA10032384B27D00285171 /* Info.plist */,
+				43D102662384C744005B3248 /* BackButton.png */,
+				43BA0FFE2384B27D00285171 /* Assets.xcassets */,
+				4346F05A23874587000BFB7C /* demo_images */,
+			);
+			path = "Champ Robotics App";
+			sourceTree = "<group>";
+		};
+		43FCAE282399D1270067DEAD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				43FCAE292399D14A0067DEAD /* Event+CoreDataClass.swift */,
+				43FCAE2A2399D14A0067DEAD /* Event+CoreDataProperties.swift */,
+				43FCAE2B2399D14A0067DEAD /* Leaderboard+CoreDataClass.swift */,
+				43FCAE2C2399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift */,
+				43FCAE2D2399D14A0067DEAD /* PastDonor+CoreDataClass.swift */,
+				43FCAE2E2399D14A0067DEAD /* PastDonor+CoreDataProperties.swift */,
+				43BA0FFB2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43BA0FF02384B27D00285171 /* Champ Robotics App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43BA10062384B27D00285171 /* Build configuration list for PBXNativeTarget "Champ Robotics App" */;
+			buildPhases = (
+				43BA0FED2384B27D00285171 /* Sources */,
+				43BA0FEE2384B27D00285171 /* Frameworks */,
+				43BA0FEF2384B27D00285171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Champ Robotics App";
+			productName = "Champ Robotics App";
+			productReference = 43BA0FF12384B27D00285171 /* Champ Robotics App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43BA0FE92384B27C00285171 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "noah rafael ortega";
+				TargetAttributes = {
+					43BA0FF02384B27D00285171 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 43BA0FEC2384B27C00285171 /* Build configuration list for PBXProject "Champ Robotics App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43BA0FE82384B27C00285171;
+			productRefGroup = 43BA0FF22384B27D00285171 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43BA0FF02384B27D00285171 /* Champ Robotics App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43BA0FEF2384B27D00285171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BA0FFF2384B27D00285171 /* Assets.xcassets in Resources */,
+				43BA0FFA2384B27D00285171 /* Main.storyboard in Resources */,
+				43D1027F2384C747005B3248 /* Snake.png in Resources */,
+				43D102772384C747005B3248 /* BackButton.png in Resources */,
+				43D1027E2384C747005B3248 /* tic-tac-toe-150614_960_720.png in Resources */,
+				43D102752384C747005B3248 /* Unknown.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43BA0FED2384B27D00285171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D102762384C747005B3248 /* EventDetailsViewController.swift in Sources */,
+				43FCAE302399D14A0067DEAD /* Event+CoreDataProperties.swift in Sources */,
+				43D102812384C747005B3248 /* ChampsModel.swift in Sources */,
+				43D1027D2384C747005B3248 /* SnakeViewController.swift in Sources */,
+				43D102732384C747005B3248 /* OthelloViewController.swift in Sources */,
+				43D1027B2384C747005B3248 /* DonationsViewController.swift in Sources */,
+				43D1027A2384C747005B3248 /* DonorAgreementViewController.swift in Sources */,
+				43D102802384C747005B3248 /* GameTabViewController.swift in Sources */,
+				43BA0FFD2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld in Sources */,
+				43FCAE362399D1920067DEAD /* PersistenceManager.swift in Sources */,
+				43FCAE342399D14A0067DEAD /* PastDonor+CoreDataProperties.swift in Sources */,
+				43D102782384C747005B3248 /* ChallengeViewController.swift in Sources */,
+				43D102822384C747005B3248 /* MostRecentDonorsViewCotroller.swift in Sources */,
+				43FCAE2F2399D14A0067DEAD /* Event+CoreDataClass.swift in Sources */,
+				43BA0FF52384B27D00285171 /* AppDelegate.swift in Sources */,
+				43FCAE322399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift in Sources */,
+				43FCAE312399D14A0067DEAD /* Leaderboard+CoreDataClass.swift in Sources */,
+				43D102832384C747005B3248 /* StudentRankViewController.swift in Sources */,
+				43D1027C2384C747005B3248 /* DonorTabViewController.swift in Sources */,
+				43D102742384C747005B3248 /* EventTabViewController.swift in Sources */,
+				43FCAE332399D14A0067DEAD /* PastDonor+CoreDataClass.swift in Sources */,
+				43D102792384C747005B3248 /* TicTacToeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43BA0FF82384B27D00285171 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43BA0FF92384B27D00285171 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43BA10042384B27D00285171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43BA10052384B27D00285171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43BA10072384B27D00285171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6378UK79LK;
+				INFOPLIST_FILE = "Champ Robotics App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiu.Champ-Robotics-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43BA10082384B27D00285171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6378UK79LK;
+				INFOPLIST_FILE = "Champ Robotics App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiu.Champ-Robotics-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43BA0FEC2384B27C00285171 /* Build configuration list for PBXProject "Champ Robotics App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BA10042384B27D00285171 /* Debug */,
+				43BA10052384B27D00285171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43BA10062384B27D00285171 /* Build configuration list for PBXNativeTarget "Champ Robotics App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BA10072384B27D00285171 /* Debug */,
+				43BA10082384B27D00285171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43BA0FFB2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43BA0FFC2384B27D00285171 /* Champ_Robotics_App.xcdatamodel */,
+			);
+			currentVersion = 43BA0FFC2384B27D00285171 /* Champ_Robotics_App.xcdatamodel */;
+			path = Champ_Robotics_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 43BA0FE92384B27C00285171 /* Project object */;
+}
