@@ -1,5 +1,5 @@
 //
-//  PastDonor+CoreDataClass.swift
+//  LeaderBoard+CoreDataClass.swift
 //  Champ Robotics App
 //
 //  Created by noah rafael ortega on 12/6/19.
@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 
-public class PastDonor: NSManagedObject {
+public class LeaderBoard: NSManagedObject {
 
 }

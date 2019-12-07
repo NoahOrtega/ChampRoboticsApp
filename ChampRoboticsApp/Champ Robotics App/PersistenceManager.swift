@@ -37,6 +37,7 @@ final class PersistenceManager{
             do {
                 try context.save()
                 print(">>>Saved Context")
+
             } catch {
                 let nserror = error as NSError
                 fatalError("Unresolved error saving context \(nserror), \(nserror.userInfo)")
@@ -57,11 +58,11 @@ final class PersistenceManager{
     }
     
     //creates core data employee object
-    func createLeaderBoardEntry(name:String, school:String){
-        let entry = Leaderboard(context: context)
+    func createLeaderBoardEntry(name:String, school:String, rank:Int16 ){
+        let entry = LeaderBoard(context: context)
         entry.name = name
         entry.school = school
-        saveContext()
+        entry.rank = rank
     }
     
     func createPastDonor(name:String, date: NSDate, amount: Float) {
@@ -76,7 +77,7 @@ final class PersistenceManager{
         let event = Event(context: context)
         event.title = title
         event.website = "www.defaultwebsite.com"
-        saveContext()
+        event.visited = false
     }
     
     func resetType<T:NSManagedObject>(_ objectType: T.Type) {
@@ -87,9 +88,9 @@ final class PersistenceManager{
             for data in result as! [NSManagedObject] {
                 context.delete(data)
             }
-            saveContext()
+            print(">>>Reset: \(entityName)")
         } catch {
-            print("reset of \(entityName) failed ")
+            print("CoreData: reset of \(entityName) failed ")
         }
     }
     

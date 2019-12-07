@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4319B609239B065E0026DF5A /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B603239B065E0026DF5A /* Event+CoreDataClass.swift */; };
+		4319B60A239B065E0026DF5A /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B604239B065E0026DF5A /* Event+CoreDataProperties.swift */; };
+		4319B60B239B065E0026DF5A /* PastDonor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B605239B065E0026DF5A /* PastDonor+CoreDataClass.swift */; };
+		4319B60C239B065E0026DF5A /* PastDonor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B606239B065E0026DF5A /* PastDonor+CoreDataProperties.swift */; };
+		4319B60D239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B607239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift */; };
+		4319B60E239B065E0026DF5A /* LeaderBoard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B608239B065E0026DF5A /* LeaderBoard+CoreDataProperties.swift */; };
 		43BA0FF52384B27D00285171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA0FF42384B27D00285171 /* AppDelegate.swift */; };
 		43BA0FFA2384B27D00285171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA0FF82384B27D00285171 /* Main.storyboard */; };
 		43BA0FFD2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43BA0FFB2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld */; };
@@ -28,16 +34,16 @@
 		43D102812384C747005B3248 /* ChampsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102702384C746005B3248 /* ChampsModel.swift */; };
 		43D102822384C747005B3248 /* MostRecentDonorsViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */; };
 		43D102832384C747005B3248 /* StudentRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102722384C746005B3248 /* StudentRankViewController.swift */; };
-		43FCAE2F2399D14A0067DEAD /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE292399D14A0067DEAD /* Event+CoreDataClass.swift */; };
-		43FCAE302399D14A0067DEAD /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2A2399D14A0067DEAD /* Event+CoreDataProperties.swift */; };
-		43FCAE312399D14A0067DEAD /* Leaderboard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2B2399D14A0067DEAD /* Leaderboard+CoreDataClass.swift */; };
-		43FCAE322399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2C2399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift */; };
-		43FCAE332399D14A0067DEAD /* PastDonor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2D2399D14A0067DEAD /* PastDonor+CoreDataClass.swift */; };
-		43FCAE342399D14A0067DEAD /* PastDonor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE2E2399D14A0067DEAD /* PastDonor+CoreDataProperties.swift */; };
 		43FCAE362399D1920067DEAD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE352399D1920067DEAD /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4319B603239B065E0026DF5A /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4319B604239B065E0026DF5A /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4319B605239B065E0026DF5A /* PastDonor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4319B606239B065E0026DF5A /* PastDonor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4319B607239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaderBoard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4319B608239B065E0026DF5A /* LeaderBoard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaderBoard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		43BA0FF12384B27D00285171 /* Champ Robotics App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Champ Robotics App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA0FF42384B27D00285171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BA0FF92384B27D00285171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,12 +67,6 @@
 		43D102702384C746005B3248 /* ChampsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampsModel.swift; sourceTree = "<group>"; };
 		43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostRecentDonorsViewCotroller.swift; sourceTree = "<group>"; };
 		43D102722384C746005B3248 /* StudentRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentRankViewController.swift; sourceTree = "<group>"; };
-		43FCAE292399D14A0067DEAD /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
-		43FCAE2A2399D14A0067DEAD /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		43FCAE2B2399D14A0067DEAD /* Leaderboard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard+CoreDataClass.swift"; sourceTree = "<group>"; };
-		43FCAE2C2399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		43FCAE2D2399D14A0067DEAD /* PastDonor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataClass.swift"; sourceTree = "<group>"; };
-		43FCAE2E2399D14A0067DEAD /* PastDonor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		43FCAE352399D1920067DEAD /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,12 +162,12 @@
 		43FCAE282399D1270067DEAD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				43FCAE292399D14A0067DEAD /* Event+CoreDataClass.swift */,
-				43FCAE2A2399D14A0067DEAD /* Event+CoreDataProperties.swift */,
-				43FCAE2B2399D14A0067DEAD /* Leaderboard+CoreDataClass.swift */,
-				43FCAE2C2399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift */,
-				43FCAE2D2399D14A0067DEAD /* PastDonor+CoreDataClass.swift */,
-				43FCAE2E2399D14A0067DEAD /* PastDonor+CoreDataProperties.swift */,
+				4319B603239B065E0026DF5A /* Event+CoreDataClass.swift */,
+				4319B604239B065E0026DF5A /* Event+CoreDataProperties.swift */,
+				4319B605239B065E0026DF5A /* PastDonor+CoreDataClass.swift */,
+				4319B606239B065E0026DF5A /* PastDonor+CoreDataProperties.swift */,
+				4319B607239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift */,
+				4319B608239B065E0026DF5A /* LeaderBoard+CoreDataProperties.swift */,
 				43BA0FFB2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -248,27 +248,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4319B60A239B065E0026DF5A /* Event+CoreDataProperties.swift in Sources */,
+				4319B60E239B065E0026DF5A /* LeaderBoard+CoreDataProperties.swift in Sources */,
+				4319B60B239B065E0026DF5A /* PastDonor+CoreDataClass.swift in Sources */,
 				43D102762384C747005B3248 /* EventDetailsViewController.swift in Sources */,
-				43FCAE302399D14A0067DEAD /* Event+CoreDataProperties.swift in Sources */,
 				43D102812384C747005B3248 /* ChampsModel.swift in Sources */,
 				43D1027D2384C747005B3248 /* SnakeViewController.swift in Sources */,
+				4319B609239B065E0026DF5A /* Event+CoreDataClass.swift in Sources */,
+				4319B60C239B065E0026DF5A /* PastDonor+CoreDataProperties.swift in Sources */,
 				43D102732384C747005B3248 /* OthelloViewController.swift in Sources */,
 				43D1027B2384C747005B3248 /* DonationsViewController.swift in Sources */,
 				43D1027A2384C747005B3248 /* DonorAgreementViewController.swift in Sources */,
 				43D102802384C747005B3248 /* GameTabViewController.swift in Sources */,
 				43BA0FFD2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld in Sources */,
 				43FCAE362399D1920067DEAD /* PersistenceManager.swift in Sources */,
-				43FCAE342399D14A0067DEAD /* PastDonor+CoreDataProperties.swift in Sources */,
 				43D102782384C747005B3248 /* ChallengeViewController.swift in Sources */,
 				43D102822384C747005B3248 /* MostRecentDonorsViewCotroller.swift in Sources */,
-				43FCAE2F2399D14A0067DEAD /* Event+CoreDataClass.swift in Sources */,
 				43BA0FF52384B27D00285171 /* AppDelegate.swift in Sources */,
-				43FCAE322399D14A0067DEAD /* Leaderboard+CoreDataProperties.swift in Sources */,
-				43FCAE312399D14A0067DEAD /* Leaderboard+CoreDataClass.swift in Sources */,
+				4319B60D239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift in Sources */,
 				43D102832384C747005B3248 /* StudentRankViewController.swift in Sources */,
 				43D1027C2384C747005B3248 /* DonorTabViewController.swift in Sources */,
 				43D102742384C747005B3248 /* EventTabViewController.swift in Sources */,
-				43FCAE332399D14A0067DEAD /* PastDonor+CoreDataClass.swift in Sources */,
 				43D102792384C747005B3248 /* TicTacToeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

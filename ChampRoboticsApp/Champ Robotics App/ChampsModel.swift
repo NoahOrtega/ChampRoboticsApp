@@ -62,13 +62,27 @@ final class ChampsModel {
     func initDummyData(should: Bool) {
         
         if(should) {
-            let item: [String] = ["FIU Mobile Robotics Social","Mentor Weekend at FIU","Swift Workshop","Mobile Robotics Workshop","Girls Who Code Event","Make a Plane","Educational Lectures Online","JAVA Workshop","Capture the Flag", "Java Practice Code", "Hackathon","FIU Panther Night", "Ruby Code Workshop","Python Workshop","Party under the STARS","Make a Bot", "Movie Day"]
+            let eventTitles: [String] = ["FIU Mobile Robotics Social","Mentor Weekend at FIU","Swift Workshop","Mobile Robotics Workshop","Girls Who Code Event","Make a Plane","Educational Lectures Online","JAVA Workshop","Capture the Flag", "Java Practice Code", "Hackathon","FIU Panther Night", "Ruby Code Workshop","Python Workshop","Party under the STARS","Make a Bot", "Movie Day"]
+            //let eventDates: [String] = ["10/20/19","10/30/19","11/15/19","11/29/19","12/7/19","","","1/15/2020","1/30/2020","","2/14/2020", "3/10/2020","3/28/2020","4/10/2020","4/22/2020","5/5/2020","5/15/2020"]
             
-            let _: [String] = ["10/20/19","10/30/19","11/15/19","11/29/19","12/7/19","","","1/15/2020","1/30/2020","","2/14/2020", "3/10/2020","3/28/2020","4/10/2020","4/22/2020","5/5/2020","5/15/2020"]
+            let rankNames: [String] = ["Cool Guy","Moss Lopez","Mike forgo","Noah Ortega","Carlos ortega","Hector Hernandez","Justin Bieber","Justin Timberlake","Nikki Mono", "Nancy Grace", "Coolman Global","Sexy Panther", "Ruby Lopez","Python Aston","Party Patter","Susie Vega", "Movie Day"]
+            
+            let donorNames: [String] = ["Cool Guy","Moss Lopez","Mike forgo","Noah Ortega","Carlos ortega","Hector Hernandez","Justin Bieber","Justin Timberlake","Nikki Mono", "Nancy Grace", "Coolman Global","Sexy Panther", "Ruby Lopez","Python Aston","Party Patter","Susie Vega", "Movie Day"]
+            
+            
             data.resetType(Event.self)
-            for x in 0..<item.count {
-                data.createEvent(title: item[x])
+            for title in eventTitles {
+                data.createEvent(title: title)
             }
+            data.resetType(LeaderBoard.self)
+            for (index, name) in rankNames.enumerated() {
+                data.createLeaderBoardEntry(name: name, school: "Sunset", rank: Int16(index+1))
+            }
+            data.resetType(PastDonor.self)
+            for (index, name) in donorNames.reversed().enumerated() {
+                data.createPastDonor(name:name, date: Date() as NSDate, amount: Float((index % 5) * 10 + index + 1))
+            }
+            data.saveContext()
         }
         
     }
