@@ -32,7 +32,7 @@ class EventTabViewController: UITableViewController {
         do {
             try fetchedResultsController.performFetch()
         } catch {
-            print("couldnt fetch events")
+            print("CoreData: couldnt fetch events")
         }
         tableView.reloadData()
     }

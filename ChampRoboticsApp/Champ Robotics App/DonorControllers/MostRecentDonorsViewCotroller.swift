@@ -6,28 +6,54 @@
 //  Copyright © 2019 Komasquin Lopez. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import CoreData
 
 class MostRecentDonorsViewController: UITableViewController {
-    var item: [String] = ["Cool Guy","Moss Lopez","Mike forgo","Noah Ortega","Carlos ortega","Hector Hernandez","Justin Bieber","Justin Timberlake","Nikki Mono", "Nancy Grace", "Coolman Global","Sexy Panther", "Ruby Lopez","Python Aston","Party Patter","Susie Vega", "Movie Day"]
+    
+    let model = ChampsModel.sharedInstance
+    let data = PersistenceManager.sharedInstance
+    
+    var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PastDonor")
+        fetchRequest.sortDescriptors = [
+            NSSortDescriptor(key: "date", ascending: true)
+        ]
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: data.context, sectionNameKeyPath: nil, cacheName: nil)
+    }
+    
+    func reloadData() {
+        do {
+            try fetchedResultsController.performFetch()
+        } catch {
+            print("coredata: couldnt fetch donors")
+        }
+        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reloadData()
+    }
+    
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return item.count
+        return fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
-    //mandatory for table view
-    override func tableView(_ tableView: UITableView,
-                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Create an instance of UITableViewCell, with default appearance
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell4",
-                                                 for: indexPath)
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "donor") //, forIndexPath: indexPath
+        let donor = fetchedResultsController.object(at: indexPath) as! PastDonor
         
-        let item2 = item[indexPath.row]
-        //let item3 = date[indexPath.row]
-        cell.textLabel?.text = "\(item2)"
-       // cell.detailTextLabel?.text = "\(item2)"
-        
-        return cell
+        cell?.textLabel?.text = "\(donor.name)"
+        cell?.detailTextLabel?.text = "$\(donor.amount)"
+        return cell!
     }
+    
 }
