@@ -2,9 +2,8 @@
 //  StudentRankViewController.swift
 //  DemoGroupProject
 //
-//  Created by Komasquin Lopez on 11/14/19.
-//  Copyright © 2019 Komasquin Lopez. All rights reserved.
-//
+//	Created By:
+//	Noah Ortega 5454548 & Komasquin Lopez 5959569
 
 import UIKit
 import CoreData
@@ -18,6 +17,7 @@ class StudentRankViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.allowsSelection = false
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "LeaderBoard")
         fetchRequest.sortDescriptors = [
@@ -49,7 +49,7 @@ class StudentRankViewController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "rank") //, forIndexPath: indexPath
         let rank = fetchedResultsController.object(at: indexPath) as! LeaderBoard
         
-        cell?.textLabel?.text = "\(rank.name)"
+        cell?.textLabel?.text = "\(rank.rank). \(rank.name)"
         cell?.detailTextLabel?.text = "\(rank.school)"
         return cell!
     }

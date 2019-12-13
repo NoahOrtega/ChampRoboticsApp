@@ -2,9 +2,8 @@
 //  MostRecentDonorsViewCotroller.swift
 //  DemoGroupProject
 //
-//  Created by Komasquin Lopez on 11/14/19.
-//  Copyright © 2019 Komasquin Lopez. All rights reserved.
-//
+//	Created By:
+//	Noah Ortega 5454548 & Komasquin Lopez 5959569
 
 import UIKit
 import CoreData
@@ -18,6 +17,7 @@ class MostRecentDonorsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.allowsSelection = false
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PastDonor")
         fetchRequest.sortDescriptors = [

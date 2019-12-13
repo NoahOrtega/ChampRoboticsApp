@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EA11DCC23A0533300D6064C /* Survey+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA11DC823A0533300D6064C /* Survey+CoreDataClass.swift */; };
+		1EA11DCD23A0533300D6064C /* Survey+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA11DC923A0533300D6064C /* Survey+CoreDataProperties.swift */; };
+		1EA11DCE23A0533300D6064C /* Question+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA11DCA23A0533300D6064C /* Question+CoreDataClass.swift */; };
+		1EA11DCF23A0533300D6064C /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA11DCB23A0533300D6064C /* Question+CoreDataProperties.swift */; };
+		1EA11DD123A0539D00D6064C /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA11DD023A0539D00D6064C /* SurveyModel.swift */; };
 		4319B609239B065E0026DF5A /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B603239B065E0026DF5A /* Event+CoreDataClass.swift */; };
-		4319B60A239B065E0026DF5A /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B604239B065E0026DF5A /* Event+CoreDataProperties.swift */; };
 		4319B60B239B065E0026DF5A /* PastDonor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B605239B065E0026DF5A /* PastDonor+CoreDataClass.swift */; };
 		4319B60C239B065E0026DF5A /* PastDonor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B606239B065E0026DF5A /* PastDonor+CoreDataProperties.swift */; };
 		4319B60D239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319B607239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift */; };
@@ -34,12 +38,18 @@
 		43D102812384C747005B3248 /* ChampsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102702384C746005B3248 /* ChampsModel.swift */; };
 		43D102822384C747005B3248 /* MostRecentDonorsViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */; };
 		43D102832384C747005B3248 /* StudentRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D102722384C746005B3248 /* StudentRankViewController.swift */; };
+		43E2D47C239EC45A0008683F /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2D47B239EC45A0008683F /* Event+CoreDataProperties.swift */; };
+		43E2D485239F03C70008683F /* locationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2D484239F03C70008683F /* locationController.swift */; };
 		43FCAE362399D1920067DEAD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCAE352399D1920067DEAD /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EA11DC823A0533300D6064C /* Survey+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Survey+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1EA11DC923A0533300D6064C /* Survey+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Survey+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1EA11DCA23A0533300D6064C /* Question+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1EA11DCB23A0533300D6064C /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1EA11DD023A0539D00D6064C /* SurveyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
 		4319B603239B065E0026DF5A /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4319B604239B065E0026DF5A /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4319B605239B065E0026DF5A /* PastDonor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4319B606239B065E0026DF5A /* PastDonor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PastDonor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4319B607239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaderBoard+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -67,6 +77,8 @@
 		43D102702384C746005B3248 /* ChampsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampsModel.swift; sourceTree = "<group>"; };
 		43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostRecentDonorsViewCotroller.swift; sourceTree = "<group>"; };
 		43D102722384C746005B3248 /* StudentRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentRankViewController.swift; sourceTree = "<group>"; };
+		43E2D47B239EC45A0008683F /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		43E2D484239F03C70008683F /* locationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationController.swift; sourceTree = "<group>"; };
 		43FCAE352399D1920067DEAD /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +109,7 @@
 			children = (
 				43D102632384C744005B3248 /* EventTabViewController.swift */,
 				43D102652384C744005B3248 /* EventDetailsViewController.swift */,
+				43E2D484239F03C70008683F /* locationController.swift */,
 			);
 			path = EventControllers;
 			sourceTree = "<group>";
@@ -106,8 +119,8 @@
 			children = (
 				43D1026B2384C745005B3248 /* DonorTabViewController.swift */,
 				43D102672384C745005B3248 /* ChallengeViewController.swift */,
-				43D1026A2384C745005B3248 /* DonationsViewController.swift */,
 				43D102692384C745005B3248 /* DonorAgreementViewController.swift */,
+				43D1026A2384C745005B3248 /* DonationsViewController.swift */,
 				43D102712384C746005B3248 /* MostRecentDonorsViewCotroller.swift */,
 				43D102722384C746005B3248 /* StudentRankViewController.swift */,
 			);
@@ -129,6 +142,7 @@
 			children = (
 				43BA0FF32384B27D00285171 /* Champ Robotics App */,
 				43BA0FF22384B27D00285171 /* Products */,
+				43E2D47F239EFDEE0008683F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,13 +158,14 @@
 			isa = PBXGroup;
 			children = (
 				43BA0FF82384B27D00285171 /* Main.storyboard */,
+				43BA0FF42384B27D00285171 /* AppDelegate.swift */,
 				4346F0572387441B000BFB7C /* GameControllers */,
 				4346F05823874537000BFB7C /* EventControllers */,
 				4346F0592387455B000BFB7C /* DonorControllers */,
 				43FCAE282399D1270067DEAD /* CoreData */,
 				43FCAE352399D1920067DEAD /* PersistenceManager.swift */,
 				43D102702384C746005B3248 /* ChampsModel.swift */,
-				43BA0FF42384B27D00285171 /* AppDelegate.swift */,
+				1EA11DD023A0539D00D6064C /* SurveyModel.swift */,
 				43BA10032384B27D00285171 /* Info.plist */,
 				43D102662384C744005B3248 /* BackButton.png */,
 				43BA0FFE2384B27D00285171 /* Assets.xcassets */,
@@ -159,11 +174,22 @@
 			path = "Champ Robotics App";
 			sourceTree = "<group>";
 		};
+		43E2D47F239EFDEE0008683F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43FCAE282399D1270067DEAD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				1EA11DC823A0533300D6064C /* Survey+CoreDataClass.swift */,
+				1EA11DC923A0533300D6064C /* Survey+CoreDataProperties.swift */,
+				1EA11DCA23A0533300D6064C /* Question+CoreDataClass.swift */,
+				1EA11DCB23A0533300D6064C /* Question+CoreDataProperties.swift */,
+				43E2D47B239EC45A0008683F /* Event+CoreDataProperties.swift */,
 				4319B603239B065E0026DF5A /* Event+CoreDataClass.swift */,
-				4319B604239B065E0026DF5A /* Event+CoreDataProperties.swift */,
 				4319B605239B065E0026DF5A /* PastDonor+CoreDataClass.swift */,
 				4319B606239B065E0026DF5A /* PastDonor+CoreDataProperties.swift */,
 				4319B607239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift */,
@@ -206,6 +232,11 @@
 					43BA0FF02384B27D00285171 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -248,28 +279,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4319B60A239B065E0026DF5A /* Event+CoreDataProperties.swift in Sources */,
+				43E2D47C239EC45A0008683F /* Event+CoreDataProperties.swift in Sources */,
 				4319B60E239B065E0026DF5A /* LeaderBoard+CoreDataProperties.swift in Sources */,
 				4319B60B239B065E0026DF5A /* PastDonor+CoreDataClass.swift in Sources */,
 				43D102762384C747005B3248 /* EventDetailsViewController.swift in Sources */,
 				43D102812384C747005B3248 /* ChampsModel.swift in Sources */,
 				43D1027D2384C747005B3248 /* SnakeViewController.swift in Sources */,
 				4319B609239B065E0026DF5A /* Event+CoreDataClass.swift in Sources */,
+				1EA11DCC23A0533300D6064C /* Survey+CoreDataClass.swift in Sources */,
 				4319B60C239B065E0026DF5A /* PastDonor+CoreDataProperties.swift in Sources */,
 				43D102732384C747005B3248 /* OthelloViewController.swift in Sources */,
 				43D1027B2384C747005B3248 /* DonationsViewController.swift in Sources */,
+				1EA11DD123A0539D00D6064C /* SurveyModel.swift in Sources */,
 				43D1027A2384C747005B3248 /* DonorAgreementViewController.swift in Sources */,
 				43D102802384C747005B3248 /* GameTabViewController.swift in Sources */,
+				1EA11DCF23A0533300D6064C /* Question+CoreDataProperties.swift in Sources */,
 				43BA0FFD2384B27D00285171 /* Champ_Robotics_App.xcdatamodeld in Sources */,
 				43FCAE362399D1920067DEAD /* PersistenceManager.swift in Sources */,
 				43D102782384C747005B3248 /* ChallengeViewController.swift in Sources */,
+				1EA11DCD23A0533300D6064C /* Survey+CoreDataProperties.swift in Sources */,
 				43D102822384C747005B3248 /* MostRecentDonorsViewCotroller.swift in Sources */,
 				43BA0FF52384B27D00285171 /* AppDelegate.swift in Sources */,
 				4319B60D239B065E0026DF5A /* LeaderBoard+CoreDataClass.swift in Sources */,
+				43E2D485239F03C70008683F /* locationController.swift in Sources */,
 				43D102832384C747005B3248 /* StudentRankViewController.swift in Sources */,
 				43D1027C2384C747005B3248 /* DonorTabViewController.swift in Sources */,
 				43D102742384C747005B3248 /* EventTabViewController.swift in Sources */,
 				43D102792384C747005B3248 /* TicTacToeViewController.swift in Sources */,
+				1EA11DCE23A0533300D6064C /* Question+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +440,7 @@
 				INFOPLIST_FILE = "Champ Robotics App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fiu.Champ-Robotics-App";
+				PRODUCT_BUNDLE_IDENTIFIER = fiu.norte019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,7 +456,7 @@
 				INFOPLIST_FILE = "Champ Robotics App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fiu.Champ-Robotics-App";
+				PRODUCT_BUNDLE_IDENTIFIER = fiu.norte019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

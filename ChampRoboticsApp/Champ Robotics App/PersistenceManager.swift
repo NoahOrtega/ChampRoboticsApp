@@ -1,10 +1,8 @@
 //
 //  PersistenceManager.swift
 //  Champ Robotics App
-//
-//  Created by noah rafael ortega on 12/5/19.
-//  Copyright © 2019 noah rafael ortega. All rights reserved.
-//
+//	Created By:
+//	Noah Ortega 5454548 & Komasquin Lopez 5959569
 
 import Foundation
 import CoreData
@@ -43,9 +41,9 @@ final class PersistenceManager{
                 fatalError("Unresolved error saving context \(nserror), \(nserror.userInfo)")
             }
         }
-    }
+    }    
     
-    func fetchAll<T:NSManagedObject>(_ objectType: T.Type) -> [T] {
+    func fetchAllAsArray<T:NSManagedObject>(_ objectType: T.Type) -> [T] {
         let entityName = String(describing: objectType)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         do {
@@ -57,14 +55,23 @@ final class PersistenceManager{
         }
     }
     
-    //creates core data employee object
+    func printAll<T:NSManagedObject>(_ objectType: T.Type){
+        print("printing all \(T.Type.self)")
+        let arrayOfAll = fetchAllAsArray(T.self)
+        
+        for i in arrayOfAll {
+            print(i)
+            }
+    }
+    
+    //creates core data leaderboard object
     func createLeaderBoardEntry(name:String, school:String, rank:Int16 ){
         let entry = LeaderBoard(context: context)
         entry.name = name
         entry.school = school
         entry.rank = rank
     }
-    
+    //creates core data donor object
     func createPastDonor(name:String, date: NSDate, amount: Float) {
         let donor = PastDonor(context: context)
         donor.name = name
@@ -72,12 +79,29 @@ final class PersistenceManager{
         donor.amount = amount
     }
     
-    //creates core data employee object
-    func createEvent(title: String){
+    //creates core data event object
+    func createEvent(title: String, start: NSDate?, end: NSDate?){
         let event = Event(context: context)
         event.title = title
         event.website = "www.defaultwebsite.com"
+        event.descript = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor dolor, sagittis ac risus eget, finibus interdum erat. Nulla neque eros, dictum at lorem quis, interdum rhoncus tortor. Nunc justo erat, egestas faucibus pulvinar eget, efficitur a erat. Donec eu laoreet neque. Fusce finibus, ipsum vel cursus placerat, urna erat commodo orci, vitae ultrices libero neque vel massa. Donec sed augue tincidunt, finibus metus ac, interdum elit."
+        event.startDate = start
+        event.endDate = end
         event.visited = false
+    }
+    
+    //creates core data survey object
+    func createSurvey () -> Survey {
+        let mySurvey = Survey(context: context)
+        return mySurvey
+    }
+    
+    
+    func createQuestion (name: String, answers: [String], survey: Survey) {
+        let myQuestion = Question(context: context)
+        myQuestion.question = name
+        myQuestion.answerList = answers
+        survey.addToHasQuestion(myQuestion)
     }
     
     func resetType<T:NSManagedObject>(_ objectType: T.Type) {
